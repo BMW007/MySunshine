@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -75,7 +76,8 @@ public class MainActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             // Create some dummy/test data for the ListView.  Here's a sample weekly forecast
             String[] data = {
-                    "Mon 6/23?- Sunny - 31/17",
+                    "  ---Weather Forecast---",
+                    "Mon 6/23 - Sunny - 31/17",
                     "Tue 6/24 - Foggy - 21/8",
                     "Wed 6/25 - Cloudy - 22/17",
                     "Thurs 6/26 - Rainy - 18/11",
@@ -94,6 +96,12 @@ public class MainActivity extends ActionBarActivity {
                                                         R.id.list_item_forecast_textview,// The ID of the textview to populate.
                                                         weekForecast);
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            // Get a reference to the ListView, and attach this adapter to it.
+            // ½«adapterÓëlistview°ó¶¨¡¢¹Ò¹³
+            ListView listView007 = (ListView) rootView.findViewById(R.id.listview_forecast);
+            listView007.setAdapter(forecastAdapter);
+
             return rootView;
         }
     }
