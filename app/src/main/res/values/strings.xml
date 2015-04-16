@@ -10,11 +10,12 @@
          By convention, "action" denotes that this String will be used as the label for an Action,
          typically from the action bar.  The ActionBar is limited real estate, so shorter is better.
     -->
-    <string name="action_settings">Settings</string>
-    <string name="action_map">Map Location</string>
+    <string name="action_settings">设置</string>
+    <string name="action_map">地图位置</string>
+    <string name="action_share">分享</string>
 
     <!-- Menu label to fetch updated weather info from the server -->
-    <string name="action_refresh" translatable="false">Refresh</string>
+    <string name="action_refresh" translatable="false">刷新</string>
     <!--<string name="title_activity_detail">DetailActivity</string>-->
     <string name="title_activity_detail">Details</string>
     <string name="title_activity_settings">Settings</string>
@@ -25,7 +26,7 @@
     <string name="pref_location_key" translatable="false">location</string>
 
     <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
-    <string name="pref_location_default" translatable="false">94043</string>
+    <string name="pref_location_default" translatable="false">361005</string>
 
     <!-- Label for the temperature units preference [CHAR LIMIT=30] -->
     <string name="pref_units_label">Temperature Units</string>
